@@ -9,7 +9,9 @@ class operate:
          print('\nthe result is: '+str(num1*num2)+'\n')
 
     def division(self,num1,num2):
+        try:
          print('\nthe result is: '+str(num1/num2)+'\n')
+        except: print('\nError occur division on zero')
 
     def remaining(self,num1,num2):
          print('\nthe result is: '+str(num1%num2)+'\n')
@@ -41,3 +43,4 @@ while True:
     if con == str(1):
         continue
     else: break
+
